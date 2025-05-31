@@ -199,6 +199,24 @@
         action = "<cmd>Telescope find_files<CR>";
         key = "ff";
       }
+      {
+        key = "<Up>";
+        action = "";
+      }
+      {
+        key = "<Down>";
+        action = "";
+      }
+
+      {
+        key = "<Left>";
+        action = "";
+      }
+
+      {
+        key = "<Right>";
+        action = "";
+      }
     ];
     plugins = {
       web-devicons.enable = true;

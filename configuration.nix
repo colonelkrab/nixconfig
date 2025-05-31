@@ -16,7 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_6_13_hardened;
+  boot.kernelPackages = pkgs.linuxPackages_6_13;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -155,6 +155,9 @@
     kitty
     lutris
     librewolf
+    protonup-qt
+    wineWowPackages.stable
+    winetricks
 
     # misc
     vim

@@ -158,6 +158,7 @@
     protonup-qt
     wineWowPackages.stable
     winetricks
+    qbittorrent
 
     # misc
     vim
@@ -167,6 +168,7 @@
     unzip
     rocmPackages.clr.icd
     clinfo
+    fastfetch
 
     # nvim
     alejandra

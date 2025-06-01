@@ -78,6 +78,14 @@
     configDir = "/home/alfin/.config/syncthing";
   };
 
+  services.jellyfin = {
+    enable = true;
+    openFirewall = true;
+    user = "alfin";
+    dataDir = "/home/alfin/Jellyfin";
+    cacheDir = "/home/alfin/Jellyfin/.cache";
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -159,9 +167,9 @@
     wineWowPackages.stable
     winetricks
     qbittorrent
+    vim
 
     # misc
-    vim
     wget
     gcc
     gnumake
@@ -170,7 +178,7 @@
     clinfo
     fastfetch
 
-    # nvim
+    # nixvim
     alejandra
   ];
 

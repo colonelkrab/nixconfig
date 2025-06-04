@@ -185,7 +185,6 @@
     mpv
     cargo
     rustc
-    signal-desktop
 
     # misc
     wget

@@ -186,6 +186,7 @@
     cargo
     rustc
     signal-desktop
+    fooyin
 
     # misc
     wget

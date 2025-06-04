@@ -123,6 +123,12 @@
   };
   programs.ssh.startAgent = true;
 
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    flake = "/home/alfin/nixconfig";
+  };
+
   programs.bash = {
     interactiveShellInit = ''
       if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
@@ -158,6 +164,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  programs.nix-ld = {
+    enable = true;
+  };
   environment.systemPackages = with pkgs; [
     #avr
     pkgsCross.avr.buildPackages.gcc
@@ -173,6 +183,8 @@
     vim
     tor-browser-bundle-bin
     mpv
+    cargo
+    rustc
 
     # misc
     wget
@@ -185,6 +197,7 @@
 
     # nixvim
     alejandra
+    rustfmt
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

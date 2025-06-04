@@ -1,15 +1,12 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}: {
+{...}: {
   programs.nixvim = {
     enable = true;
     colorschemes.catppuccin.enable = true;
+
+    # keybindings
     keymaps = [
       {
-        action = "<cmd>Telescope find_files<CR>";
+        action = "<cmd>Telescope find_files<cr>";
         key = "ff";
       }
       {
@@ -30,17 +27,28 @@
         key = "<Right>";
         action = "";
       }
+      {
+        key = "<C-n>";
+        action = "<cmd>Neotree filesystem toggle<cr>";
+      }
     ];
+    opts = {
+      number = true;
+      relativenumber = true;
+      swapfile = false;
+    };
     plugins = {
       web-devicons.enable = true;
       nvim-autopairs.enable = true;
       telescope.enable = true;
+      neo-tree.enable = true;
       conform-nvim = {
         enable = true;
         settings = {
           format_on_save.lsp_format = "fallback";
           formatters_by_ft = {
             nix = ["alejandra"];
+            rust = ["rustfmt"];
           };
         };
       };
@@ -69,6 +77,11 @@
         servers = {
           nixd = {
             enable = true;
+          };
+          rust_analyzer = {
+            enable = true;
+            installCargo = false;
+            installRustc = false;
           };
         };
       };

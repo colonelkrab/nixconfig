@@ -174,7 +174,6 @@
     pkgsCross.avr.buildPackages.gcc
 
     # software
-    kitty
     lutris
     librewolf
     protonup-qt
@@ -192,7 +191,6 @@
     # KDE
     kdePackages.kcalc # Calculator
     kdePackages.ksystemlog # KDE SystemLog Application
-    kdePackages.sddm-kcm # Configuration module for SDDM
     kdePackages.partitionmanager # Optional Manage the disk devices, partitions and file systems on your computer
     hardinfo2 # System information and benchmarks for Linux systems
     haruna # Open source video player built with Qt/QML and libmpv

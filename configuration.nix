@@ -189,6 +189,15 @@
     signal-desktop
     fooyin
 
+    # KDE
+    kdePackages.kcalc # Calculator
+    kdePackages.ksystemlog # KDE SystemLog Application
+    kdePackages.sddm-kcm # Configuration module for SDDM
+    kdePackages.partitionmanager # Optional Manage the disk devices, partitions and file systems on your computer
+    hardinfo2 # System information and benchmarks for Linux systems
+    haruna # Open source video player built with Qt/QML and libmpv
+    wayland-utils # Wayland utilities
+
     # misc
     wget
     gcc
@@ -206,13 +215,6 @@
     nerd-fonts.jetbrains-mono
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
   programs.steam = {
     enable = true;
   };

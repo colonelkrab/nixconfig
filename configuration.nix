@@ -196,6 +196,7 @@
     rocmPackages.clr.icd
     clinfo
     fastfetch
+    unrar
 
     # nixvim dependencies (formatter/lsps)
     alejandra

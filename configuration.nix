@@ -179,6 +179,7 @@
     rustc
     signal-desktop
     fooyin
+    protonvpn-gui
 
     # KDE
     kdePackages.kcalc # Calculator

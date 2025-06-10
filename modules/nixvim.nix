@@ -84,6 +84,7 @@
             installCargo = false;
             installRustc = false;
           };
+          clangd.enable = true;
         };
       };
     };

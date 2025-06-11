@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
@@ -86,11 +86,11 @@
           };
           clangd = {
             enable = true;
-            package = null;
             settings = {
               cmd = [
                 "clangd"
                 "--background-index"
+                "--query-driver=${pkgs.pkgsCross.avr.buildPackages.gcc}"
               ];
               filetypes = [
                 "c"

@@ -86,11 +86,12 @@
           };
           clangd = {
             enable = true;
+            package = null;
             settings = {
               cmd = [
                 "clangd"
                 "--background-index"
-                "--query-driver=${pkgs.pkgsCross.avr.buildPackages.gcc}"
+                "--query-driver=${pkgs.pkgsCross.avr.buildPackages.gcc}/bin/avr-gcc"
               ];
               filetypes = [
                 "c"

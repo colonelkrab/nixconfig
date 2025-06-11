@@ -84,7 +84,24 @@
             installCargo = false;
             installRustc = false;
           };
-          clangd.enable = true;
+          clangd = {
+            enable = true;
+            package = null;
+            settings = {
+              cmd = [
+                "clangd"
+                "--background-index"
+              ];
+              filetypes = [
+                "c"
+                "cpp"
+              ];
+              root_markers = [
+                "compile_commands.json"
+                "compile_flags.txt"
+              ];
+            };
+          };
         };
       };
     };

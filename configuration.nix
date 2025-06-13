@@ -180,6 +180,7 @@
     signal-desktop
     fooyin
     protonvpn-gui
+    gtkterm
 
     # KDE
     kdePackages.kcalc # Calculator

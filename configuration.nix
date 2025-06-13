@@ -202,6 +202,7 @@
     # nixvim dependencies (formatter/lsps)
     alejandra
     rustfmt
+    astyle
   ];
 
   # install fonts

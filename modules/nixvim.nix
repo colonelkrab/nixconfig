@@ -50,6 +50,7 @@
           formatters_by_ft = {
             nix = ["alejandra"];
             rust = ["rustfmt"];
+            c = ["astyle"];
           };
         };
       };
@@ -86,7 +87,7 @@
           };
           clangd = {
             enable = true;
-            package = null;
+            package = null; # use clang-unrwapped and include needed files in compile-commands.json
           };
         };
       };

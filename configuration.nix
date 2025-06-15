@@ -181,6 +181,7 @@
     fooyin
     protonvpn-gui
     gtkterm
+    screen
 
     # KDE
     kdePackages.kcalc # Calculator

@@ -182,6 +182,7 @@
     protonvpn-gui
     gtkterm
     screen
+    gamescope
 
     # KDE
     kdePackages.kcalc # Calculator

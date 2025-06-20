@@ -99,9 +99,6 @@
     isNormalUser = true;
     description = "alfin";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [
-      kdePackages.kate
-    ];
   };
   programs.ssh.startAgent = true;
 
@@ -188,6 +185,7 @@
     kdePackages.kcalc # Calculator
     kdePackages.ksystemlog # KDE SystemLog Application
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
+    kdePackages.kget
     hardinfo2 # System information and benchmarks for Linux systems
     haruna # Open source video player built with Qt/QML and libmpv
     wayland-utils # Wayland utilities

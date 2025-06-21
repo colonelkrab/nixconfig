@@ -172,8 +172,6 @@
     vim
     tor-browser-bundle-bin
     mpv
-    cargo
-    rustc
     signal-desktop
     fooyin
     protonvpn-gui
@@ -199,6 +197,7 @@
     clinfo
     fastfetch
     unrar
+    libiconv
 
     # nixvim dependencies (formatter/lsps)
     alejandra

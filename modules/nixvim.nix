@@ -51,6 +51,7 @@
             nix = ["alejandra"];
             rust = ["rustfmt"];
             c = ["astyle"];
+            fish = ["fish_indent"];
           };
         };
       };

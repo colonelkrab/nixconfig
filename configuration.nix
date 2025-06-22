@@ -159,9 +159,6 @@
 
   # system packages
   environment.systemPackages = with pkgs; [
-    #avr
-    pkgsCross.avr.buildPackages.gcc
-
     # software
     lutris
     librewolf
@@ -197,7 +194,6 @@
     clinfo
     fastfetch
     unrar
-    libiconv
 
     # nixvim dependencies (formatter/lsps)
     alejandra

@@ -175,6 +175,7 @@
     gtkterm
     screen
     gamescope
+    gimp
 
     # KDE
     kdePackages.kcalc # Calculator

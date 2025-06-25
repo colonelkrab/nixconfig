@@ -195,6 +195,7 @@
     clinfo
     fastfetch
     unrar
+    jq
 
     # nixvim dependencies (formatter/lsps)
     alejandra

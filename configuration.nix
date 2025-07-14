@@ -192,6 +192,7 @@
 
     # misc
     wget
+    glfw
     gcc
     bear
     gnumake

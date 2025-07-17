@@ -32,7 +32,16 @@
   ];
 
   # Enable networking
-  networking.networkmanager.enable = true;
+  networking = {
+    nameservers = ["127.0.0.1" "::1"];
+    # If using dhcpcd:
+    dhcpcd.extraConfig = "nohook resolv.conf";
+    # If using NetworkManager:
+    networkmanager = {
+      enable = true;
+      dns = "none";
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "Asia/Dubai";
@@ -103,6 +112,7 @@
     extraGroups = ["networkmanager" "wheel"];
   };
   programs.ssh.startAgent = true;
+  programs.direnv.enable = true;
 
   # pretty outputs for nix commands
   programs.nh = {

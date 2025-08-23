@@ -191,6 +191,7 @@
     wayland-utils # Wayland utilities
 
     # misc
+    file
     wget
     glfw
     gcc

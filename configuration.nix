@@ -30,7 +30,11 @@
   systemd.tmpfiles.rules = [
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
   ];
-
+  #VM
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = ["alfin"];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
   # Enable networking
   networking.networkmanager.enable = true;
 

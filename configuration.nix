@@ -168,6 +168,7 @@
     # software
     lutris
     librewolf
+    libreoffice
     protonup-qt
     wineWowPackages.stable
     winetricks

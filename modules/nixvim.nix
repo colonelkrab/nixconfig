@@ -2,7 +2,7 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    # colorschemes.catppuccin.enable = true;
+    colorschemes.base16.enable = true;
 
     # keybindings
     keymaps = [

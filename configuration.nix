@@ -196,6 +196,7 @@
     wayland-utils # Wayland utilities
 
     # misc
+    p7zip
     file
     wget
     glfw

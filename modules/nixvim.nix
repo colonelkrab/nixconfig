@@ -2,7 +2,10 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    colorschemes.base16.enable = true;
+    colorschemes.base16 = {
+      enable = true;
+      colorscheme = "classic-dark";
+    };
 
     # keybindings
     keymaps = [

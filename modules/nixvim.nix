@@ -2,9 +2,9 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    colorschemes.base16 = {
+    colorschemes.gruvbox = {
       enable = true;
-      colorscheme = "classic-dark";
+      # colorscheme = "classic-dark";
     };
 
     # keybindings

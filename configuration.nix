@@ -166,7 +166,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];
-
+  programs.pulseview.enable = true;
   # system packages
   environment.systemPackages = with pkgs; [
     # software
@@ -199,6 +199,9 @@
     haruna # Open source video player built with Qt/QML and libmpv
     wayland-utils # Wayland utilities
 
+    #logic analyzer
+    # sigrok-firmware-fx2lafw
+    # pulseview
     # misc
     p7zip
     usbutils

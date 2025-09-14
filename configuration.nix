@@ -10,6 +10,10 @@
     ./hardware-configuration.nix
     ./modules/nixvim.nix
   ];
+  #udev extra rules
+
+  services.udev.extraRules = ''
+  '';
   # bluetooth
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
@@ -197,6 +201,7 @@
 
     # misc
     p7zip
+    usbutils
     file
     wget
     glfw

@@ -187,6 +187,7 @@
     screen
     gimp
     gamescope
+    lynx
 
     # KDE
     kdePackages.kcalc # Calculator
@@ -199,9 +200,6 @@
     haruna # Open source video player built with Qt/QML and libmpv
     wayland-utils # Wayland utilities
 
-    #logic analyzer
-    # sigrok-firmware-fx2lafw
-    # pulseview
     # misc
     p7zip
     usbutils

@@ -188,6 +188,7 @@
     gimp
     gamescope
     lynx
+    qucs-s
 
     # KDE
     kdePackages.kcalc # Calculator

@@ -189,6 +189,7 @@
     gamescope
     lynx
     qucs-s
+    ngspice
 
     # KDE
     kdePackages.kcalc # Calculator

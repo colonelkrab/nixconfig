@@ -9,6 +9,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./modules/nixvim.nix
+    ./shells/pic.nix
   ];
   #udev extra rules
   services.udev.extraRules = ''

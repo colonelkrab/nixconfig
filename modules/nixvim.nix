@@ -1,5 +1,10 @@
 {pkgs, ...}: {
-  environment.systemPackages = [pkgs.alsa-lib];
+  environment.systemPackages = with pkgs; [
+    # nixvim dependencies (formatter/lsps)
+    alejandra
+    rustfmt
+    astyle
+  ];
   programs.nixvim = {
     enable = true;
     defaultEditor = true;

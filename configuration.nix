@@ -11,7 +11,6 @@
     ./modules/nixvim.nix
   ];
   #udev extra rules
-
   services.udev.extraRules = ''
   '';
   # bluetooth
@@ -159,10 +158,10 @@
       };
     };
   };
-  programs.nix-ld = {
-    enable = true;
-  };
-
+  # programs.nix-ld = {
+  #   enable = true;
+  # };
+  #
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -204,6 +203,7 @@
 
     # misc
     p7zip
+    wl-clipboard
     usbutils
     file
     wget
@@ -217,11 +217,6 @@
     fastfetch
     unrar
     jq
-
-    # nixvim dependencies (formatter/lsps)
-    alejandra
-    rustfmt
-    astyle
   ];
 
   # install fonts

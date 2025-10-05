@@ -9,7 +9,6 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./modules/nixvim.nix
-    ./shells/pic.nix
   ];
   #udev extra rules
   services.udev.extraRules = ''
@@ -190,12 +189,14 @@
     lynx
     qucs-s
     ngspice
+    audacity
 
     # KDE
     kdePackages.kcalc # Calculator
     kdePackages.ksystemlog # KDE SystemLog Application
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
     kdePackages.kget
+    kdePackages.kdenlive
 
     kdePackages.kdialog
     hardinfo2 # System information and benchmarks for Linux systems

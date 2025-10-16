@@ -206,6 +206,7 @@
     # misc
     p7zip
     wl-clipboard
+    jujutsu
     usbutils
     file
     wget
@@ -219,6 +220,8 @@
     fastfetch
     unrar
     jq
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
   ];
 
   # install fonts

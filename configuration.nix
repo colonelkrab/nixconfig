@@ -190,6 +190,7 @@
     qucs-s
     ngspice
     audacity
+    cheese
 
     # KDE
     kdePackages.kcalc # Calculator

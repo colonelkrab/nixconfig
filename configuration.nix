@@ -191,6 +191,8 @@
     ngspice
     audacity
     cheese
+    rustc
+    cargo
 
     # KDE
     kdePackages.kcalc # Calculator

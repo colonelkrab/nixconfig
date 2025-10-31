@@ -193,6 +193,7 @@
     cheese
     rustc
     cargo
+    texstudio
 
     # KDE
     kdePackages.kcalc # Calculator

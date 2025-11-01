@@ -194,6 +194,7 @@
     texstudio
     texliveFull
     qucs-s
+    ngspice
 
     # KDE
     kdePackages.kcalc # Calculator

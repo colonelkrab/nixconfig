@@ -193,6 +193,7 @@
     cargo
     texstudio
     texliveFull
+    qucs-s
 
     # KDE
     kdePackages.kcalc # Calculator

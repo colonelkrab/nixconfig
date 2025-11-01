@@ -187,13 +187,12 @@
     gimp
     gamescope
     lynx
-    qucs-s
-    ngspice
     audacity
     cheese
     rustc
     cargo
     texstudio
+    texliveFull
 
     # KDE
     kdePackages.kcalc # Calculator

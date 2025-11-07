@@ -195,6 +195,7 @@
     texliveFull
     qucs-s
     kicad
+    kakoune
 
     # KDE
     kdePackages.kcalc # Calculator

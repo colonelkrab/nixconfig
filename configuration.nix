@@ -203,6 +203,7 @@
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
     kdePackages.kget
     kdePackages.kdenlive
+    kdePackages.isoimagewriter
 
     kdePackages.kdialog
     hardinfo2 # System information and benchmarks for Linux systems
